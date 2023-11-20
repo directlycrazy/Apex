@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	background-image: url('/hero.jpg');
+	background-size: cover;
+  background-attachment: fixed;
+}
+
+.clipping {
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
