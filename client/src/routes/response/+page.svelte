@@ -172,12 +172,12 @@
 				<div
 					class="animate text-center backdrop-filter shadow-lg rounded-lg backdrop-brightness-75 backdrop-blur-lg"
 				>
-					<Button href={`/talk?chat=${chat}`} name="↑ Continue Chat" />
+					<Button href={chat === 'false' ? "/talk" : `/talk?chat=${chat}`} name="↑ Continue Chat" />
 				</div>
 				<div
 					class="animate text-center backdrop-filter shadow-lg rounded-lg backdrop-brightness-75 backdrop-blur-lg"
 				>
-					<Button href="/" name="← Start Over" />
+					<Button href="/talk" name="← Start Over" />
 				</div>
 			</div>
 		{/if}
